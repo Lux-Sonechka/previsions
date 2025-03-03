@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="icon" type="image/x-icon" href="DeltaFurry_pfp.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <title>予言 1.1</title>
+</head>
+<body onload="OnStart()">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="tape" style="width: 30%;height: 10%;transform: rotate(-30deg) translate(-7vw, -8vw);"></div>
+        <div class="tape" style="width: 30%;height: 10%;transform: rotate(30deg) translate(27vw, -17vw);"></div>
+        <span class="close" onclick="close_popup()">&times;</span>
+      <div id="text-modal">
+        <h1>Welcome!</h1>
+      <p>Have a nice reading! In case of any bug or grammatical error, please contact me.<br>Make yourself at home~</p>
+      <h4>- Delta</h4>
+      </div>
+    </div>
+    </div>
+
+    <div id="Modal-chapter" class="modal">
+        <div id="modal-content-chapters"><span class="close" style="transform: translate(47vw);" onclick="close_chapter()">&times;</span>
+            <h1 style="margin: 2vw;">Chapters</h1>
+            <a class="crumb2" onclick="chapter_1()">Chapter 1 - Friendship & Coffee</a>
+            <a class="crumb2" onclick="chapter_2()">Chapter 2 - An unexpected chat</a>
+            <a class="crumb2" onclick="chapter_3()">Chapter 3 - Knee Deep in Agony</a>
+        </div>
+    </div>
+    
+
+    <div class="tape" style="margin: 1vw; position: static; width: 97vw; display: flex;color: rgb(245, 239, 255);align-items: center;justify-content: center;">
+        <h3 id="slogan" onclick="Red_Slogan()">力 | 予言</h1>
+        <a class="crumb" onclick="Red_Home()">Home</a>
+        <a class="crumb" onclick="open_chapter()">Chapters</a>
+        <a class="crumb" onclick="Red_About()">About</a>
+        <a class="crumb">Wiki (COMING SOON)</a>
+    </div>
+
+    <div id="media-player">
+        <h2>‟Books are a uniquely portable magic.” <br>- Stephen King</h2>
+        <img src="./img/gramophone-gif.gif" id="gramophone-gif">
+        <!--<audio autoplay controls loop id="song-unfamiliar">
+            <source src="Songs/its-de-lovely.wav" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>-->
+    </div>
+    <div id="content-home">
+        <div class="news">
+            <div class="tape" style="transform: rotate(-30deg) translate(-7vw, -5vw);"></div>
+            <h3>March 2024</h3>
+            <ul>
+                <li>The entire website is being remastered!</li>
+                <li>The lore is being remade.</li>
+                <li>Wiki page for little explanations about the history and characters.</li>
+                <li>And much more... :3</li>
+            </ul>
+            <div class="tape" style="transform: rotate(-30deg) translate(17vw, 7vw);"></div>
+        </div>
+
+        <div class="content-container">
+            <img src="img/shinji-evangelion-sticker.png" style="width: 25vw; height: 20vw;position: absolute; translate: 45vw 15vw;">
+            "This is a fictional history created by myself. I confess I had lots of insipirations, such as Welcome Home, Evangelion,
+            Ultrakill, Harry Potter, and a few more.<br> I always wanted to write a history, create universes, characters,
+            worlds, and even languages... <br><br>I didn't know from where to start, so I had a idea to create a site for my histories.
+            Quickly, I got started and after a few designs, programations, and ideas I finally released the first chapter.
+            <br>My friends used to read the chapters and support my work, that was what I have needed to continue the project".<br><br>
+            <br>Thank you, Guys!! <3
+            <br>-- Delta
+        </div>
+    </div>
+    <div style="margin-left: 37vw; font-size: 2vw; margin-top: 5vw;"> 
+        <div style="margin-left: 5vw; font-family: 'Schoolbell', serif;color:black;">~ Made with love 💖 ~</div>
+    </div>
+</body>
+</html>
