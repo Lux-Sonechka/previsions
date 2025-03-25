@@ -60,7 +60,7 @@ function open_chapter() {
 }
 function chapter_1() {
     const new_window = window.open()
-    new_window.location.href = "Chapters/1st/chapter1.html"
+    new_window.location.href = "chapters/1st/index.html"
 }
 function chapter_2() {
     const new_window = window.open()
