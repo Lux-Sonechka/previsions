@@ -1,0 +1,63 @@
+body {
+    font-family: Comic Sans MS;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(180deg, #b7b1f2 8.33%, #fdb7ea 8.33%, #fdb7ea 16.67%, #ffdccc 16.67%, #ffdccc 25%, #fbf3b9 25%, #fbf3b9 33.33%, #fdb7ea 33.33%, #fdb7ea 41.67%, #ffdccc 41.67%, #ffdccc 50%, #b7b1f2 50%, #b7b1f2 58.33%, #fdb7ea 58.33%, #fdb7ea 66.67%, #ffdccc 66.67%, #ffdccc 75%, #fbf3b9 75%, #fbf3b9 83.33%, #fdb7ea 83.33%, #fdb7ea 91.67%, #ffdccc 91.67%, #ffdccc 100%);
+    background-size: 600.00px 600.00px;
+    color: rgb(0, 0, 0);
+}
+
+.slider-container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 85%;
+    height: 100%;
+    box-shadow: -0.1vw -1vw 5vw 1vw rgba(40, 17, 124, 0.44);
+    border: 0.2vw solid rgba(28, 12, 86, 0.44);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 1vw;
+    min-height: 100%;
+    font-size: 2.5vw;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.5%;
+    opacity: 0;
+}
+
+  
+.active {
+    background-image: linear-gradient(0deg, #e7f2f5 25%, #f0e1f2 25%, #f0e1f2 50%, #e7f2f5 50%, #e7f2f5 75%, #f0e1f2 75%, #f0e1f2 100%);
+    background-size: 15vw 10vw;
+    opacity: 1;
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.button-slide {
+    position: fixed;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button-slide:hover {
+    background-color: #666;
+}
